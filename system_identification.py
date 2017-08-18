@@ -111,7 +111,7 @@ def  findOptimalGaussianFilter(data, max_kernel, max_lag):
     # Loop the length of the input space, just to cover the whole
     # ground. Should stop earlier though.
     lags = [0.0]*max_kernel
-    for kernel_test in range(1,max_kernel+1):
+    for kernel_test in range(1,max_kernel):
         # By starting with sigma as 1, we start with a very noisy
         # first filter. (all-pass)
         # Try out the filter:
